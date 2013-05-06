@@ -1,0 +1,156 @@
+%
+% Refrence http://en.wikibooks.org/wiki/LaTeX
+%
+
+\documentclass[10pt]{article}
+
+%
+% Header
+%
+
+% use helvetica font
+\usepackage{droidsans}    
+% \usepackage[default]{lato}
+\renewcommand\familydefault{\sfdefault}   % set default font to sans-serif
+
+
+% enable \href
+\usepackage[colorlinks=true,
+            linkcolor=blue,
+            allbordercolors={0 0 0},
+            pdfborderstyle={/S/U/W 1}]{hyperref}
+
+% allows the use of \includegraphics[height=60mm]{myfig.jpg}
+\usepackage{graphicx}  
+
+%
+% Document Meta Data
+% 
+\title{An example latex document}
+\author{Huy Nguyen}
+%\date{March 2013}
+
+%
+% Body
+%
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+
+\begin{abstract}
+For a long time we've known that Lorem 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\end{abstract}
+
+\section{A section}
+Duis Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\subsection{A subsection}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\subsubsection{A subsubsection}
+Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\paragraph{A paragraph}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\subparagraph{A subparagraph}
+Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\section{onto some code}
+
+\begin{verbatim}
+j = []
+for i in range(10):
+    j.append(i)
+    j.append(i+1)
+    j.append(i+2)
+sum(j)
+\end{verbatim}
+
+\section{Graphics}
+
+\subsection{Raw pictures}
+
+\includegraphics[height=60mm]{moon.jpg}
+
+\subsection{Figures}
+
+Figures help you group text and pictures together
+
+\begin{figure}[!ht]
+  \centering
+    \reflectbox{%
+      \includegraphics[width=0.5\textwidth]{moon.jpg}}
+  \caption{A picture of the same gull
+           looking the other way!}
+\end{figure}
+
+\section{Hyperlinks}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. \href{http://www.google.com}{Ut enim}
+ ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\section{Tables}
+
+\begin{tabular}{ l | c | r }
+  \hline
+  1 & 2 & 3 \\ \hline
+  4 & 5 & 6 \\ \hline
+  7 & 8 & 9 \\ \hline
+\end{tabular}
+
+
+%
+% Footnotes
+% 
+% \section{Footnotes}
+% This is an example footnote\footnote{An example footnote.}
+% \footnotetext[17]{This is my footnote!}
+
+% \footnotemark[17]
+
+% 
+% Citations
+% 
+\section{Citations}
+
+This is how you cite \cite{lamport94} a paper.
+
+\begin{thebibliography}{9}
+
+\bibitem{lamport94}
+  Leslie Lamport,
+  \href{http://www.google.com}{\emph{\LaTeX: A Document Preparation System}}.
+  Addison Wesley, Massachusetts,
+  2nd Edition,
+  1994.
+
+
+\end{thebibliography}
+
+\end{document}
+
+
