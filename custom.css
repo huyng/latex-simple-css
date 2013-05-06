@@ -20,22 +20,21 @@ body {
     margin:10em;
     max-width:42em;
     background:#fefefe;
-    color:#222;
+    color:#333;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
-    margin: 2em 0px 10px 0px;
+    margin: 2em 0px 15px 0px;
 }
 
 h1 {
-    color: #000000;
+    color: #000;
     font-size: 2em;
 }
 
 h2 {
-    color: #000000;
-    font-size: 1.8em;
+    font-size: 2em;
 }
 
 h3 {
@@ -43,7 +42,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
 h5 {
